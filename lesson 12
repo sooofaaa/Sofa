@@ -1,0 +1,54 @@
+# True
+# False
+
+# print (3==3)
+
+
+# if 1:
+#     print ('Переменная истинно')
+
+# else:
+#     print('Переменна ложно')
+
+# light = 'red'
+# if light == 'red':
+#     print ('Stop')
+# elif light == 'yellow':
+#     print (' Wait')
+# elif light == 'green':
+#     print('go')
+# else:
+#     print(' what?')
+
+# age = int(input (' how much?'))
+
+# if age >= 18:
+#     print('Welcome!')
+# else:
+#     print(f'You are {age} age, need  a {18 - age}')
+
+# time = 12
+# if time < 12  or time > 13:
+#     print ('We are open')
+# else:
+#     print('Close')
+
+# time = 8
+
+# day = 'su' 
+
+# if time  >= 8  and day != 'su':
+#     print ('We are open')
+# else:
+#     print('Close')
+ 
+# x = 0
+# if not x:
+#     print ("Yes")
+# else:
+#     print("No")
+
+# x=1
+# res = "Yes" if x else 'No'
+# print (res)
+# print("Yes" if x else 'No')
