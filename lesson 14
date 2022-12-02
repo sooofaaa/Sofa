@@ -1,1 +1,23 @@
+# l = [1,2,3,'hello', ['test', 10], 'world', True]
+# l2 = list('Hello')
+# l3 = list ((1,2,3))
 
+# l4 =[i for i in 'hello'] 
+# l5 =[i*2 for i in 'hello' if i not in ['a', 'e', 'l']]
+# print(l, l2, l3,l4, l5, sep='\n')
+
+# l6 = list (range(0, 11, 2))
+# print(l6)
+
+# for i in range (1, 3):
+#     print(f"Внешний цикл #{i}")
+#     for j in range(1,3):
+#             print(f"\tВнутренний цикл #{j}")
+
+#homework 
+
+# for i in range (1, 6):
+#     print(f"Умножение на {i}")
+#     for j in range(1,11):
+#             print(f"{i} * {j} = {i *j}\t", end = "")
+#     print(' ')
