@@ -1,0 +1,67 @@
+# d = {}
+# prod = {'title': 'Sony', 'Price': 100}
+# prod2 = dict(title= 'Iphone', price=110)
+
+# print(d)
+# print(prod)
+# print(prod2)
+# print(type(d))
+
+# users = [
+#     ['bob@gmail.com', 'Bob'],
+#     ['katy@gmail.com', 'Katy'],
+#     ['john@gmail.com', 'Jonh']
+
+# ]
+# d_users=dict(users)
+# print(users)
+# print(d_users)
+
+
+
+# users_t= (
+#     ('bob@gmail.com', 'Bob'),
+#     ('katy@gmail.com', 'Katy'),
+#     ('john@gmail.com', 'Jonh')
+
+# )
+# t_users=dict(users_t)
+# print(users_t)
+# print(t_users)
+
+# prod3 =dict.fromkeys(['price1','price2','price3' ], 50)
+# print(prod3)
+
+# nums = {i:i+1 for i in range (1,10)}
+# print (nums)
+
+# prod = {'title': 'Sony', 'Price': 100}
+# prod2 = dict(title= 'Iphone', price=110)
+
+# print( prod['title'])
+# print( prod.get('title2', 'NO')) #if no kay
+
+
+# print(nums['1'])
+
+# for key in prod:
+#     print(f'{key}: {prod[key]}')
+#     # print(prod[key])
+
+# for key, value in prod.items():
+#     print(key, value)
+
+# nums = {i:i+1 for i in range (1,10)}
+# print (nums)
+
+# prods= [
+#     {'title': 'Sony', 'Price': 100},
+#     {'title': 'IPhone', 'Price': 110},
+#     {'title': 'Samsumg', 'Price': 90}
+# ]
+
+# print(prods)
+
+
+# for produ in prods:
+#     print(produ['title'], produ['Price'])
