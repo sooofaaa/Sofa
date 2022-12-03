@@ -1,0 +1,64 @@
+#print("Exercise 1")
+# l = [1,2,3]
+# l2=[i*2 for i in l]
+# print ("Answer: ", l2)
+
+# print("Exercise 2")
+# l = [1,2,3]
+# l2= 0
+# for num in l:
+#     l2+=num**2
+# print ("Answer: ", l2)
+
+# print("Exercise 3")
+# time1 = 3
+# time2=6.7
+# time3=11.8
+# x1=time1//2
+# x2= time2//2
+# x3=time3//2
+# print ("Answer: ", x1, x2, x3)
+
+# print("Exercise 4")
+# l='Hello world'
+# if " " in l:
+#     l=l.upper()
+# else:
+#     l=l.lower()
+# print ("Answer: ", l)
+
+#homework
+
+# words=['мадам', 'топот', 'test', 'madam', 'word']
+
+# print("First way")
+# pals = []
+# for word in words:
+#     if word == word[::-1]:
+#         pals.append(word)
+# print(pals)
+
+# print("Second way")
+# words.remove("test")
+# words.remove("word")
+# print(str(words)[1:-1])
+
+# print("Third way")
+# pals = [ word for word in words if word == word [::-1]]
+# print(pals)
+
+# my_str= ['Око за око', 'А роза упала на лапу Азора', 'Около Миши молоко']
+# pals=[]
+# for word in my_str:
+#     word_r = word.replace(" ", "").lower ()
+#     if word_r==word_r[::-1]:
+#         pals.append(word)
+# print(pals)
+
+# l= list(range(1,10))
+
+# l2=list('Hello')
+# print(l, l2)
+# s='----'.join(map(str,l))
+# s2=','.join(l2)
+# print(s, s2)
