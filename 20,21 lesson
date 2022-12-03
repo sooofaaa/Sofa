@@ -1,0 +1,35 @@
+#homework
+
+# words=['мадам', 'топот', 'test', 'madam', 'word']
+
+# print("First way")
+# pals = []
+# for word in words:
+#     if word == word[::-1]:
+#         pals.append(word)
+# print(pals)
+
+# print("Second way")
+# words.remove("test")
+# words.remove("word")
+# print(str(words)[1:-1])
+
+# print("Third way")
+# pals = [ word for word in words if word == word [::-1]]
+# print(pals)
+
+# my_str= ['Око за око', 'А роза упала на лапу Азора', 'Около Миши молоко']
+# pals=[]
+# for word in my_str:
+#     word_r = word.replace(" ", "").lower ()
+#     if word_r==word_r[::-1]:
+#         pals.append(word)
+# print(pals)
+
+# l= list(range(1,10))
+
+# l2=list('Hello')
+# print(l, l2)
+# s='----'.join(map(str,l))
+# s2=','.join(l2)
+# print(s, s2)
