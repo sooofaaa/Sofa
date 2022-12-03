@@ -1,0 +1,14 @@
+# prod = {'title': 'Sony', 'Price': 100}
+# print(prod.items())
+# print(prod.keys())
+# print(prod.pop('title'))
+# print(prod)
+# print(prod.popitem())
+# print(prod)
+# print(prod.setdefault('title2','test'))
+# prod.update({'test': 'value'})
+# prod.update({'Price': '300'})
+
+# print(prod)
+
+# print(prod.values())
