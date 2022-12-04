@@ -1,0 +1,20 @@
+# def get_sum(a,b,c,d):
+#     return a+b+c+d
+# print(get_sum(1,2, d=5))
+
+# def get_sum (*args):
+#     #  print(args)
+#     return sum(args)
+# print(get_sum(1,5,10))
+
+# def func (**kwarge):
+#     print(kwarge)
+# func (a=1, b=5, c=20)
+
+# def f(a,x,*args,**kwarge):
+#     print(a)
+#     print(x)
+#     print(args)
+#     print(kwarge)
+
+# f(1,2,3,4,b='test', c='hi ')
