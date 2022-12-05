@@ -1,0 +1,45 @@
+# from datetime import date, datetime
+# import locale
+# today = date.today() 
+# print (today) # 2022-12-05
+# print (today.day) # 5
+# print (today.month) # 12
+# print (today.year) # 2022
+# print (today.weekday()) # 0
+
+# now = datetime.now() 
+
+# now2 = datetime.today()
+
+# print (now) # 2022-12-05 22:08:18.327821
+# print (now. day) # 5 
+# print (now. month) # 12
+# int (now.year) # 2022 
+# print (now.weekday) # 0
+# print (now.hour) # 22
+# print (now. minute) # 8
+# print (now.second) # 18
+
+# days = ['пн', 'вт', 'cр', 'чт', 'пт', 'сб', 'вс']
+# print (days [now. weekday () ]) #пн
+
+
+
+# locale.setlocale (locale.LC_ALL, 'ru_RU') 
+# locale.setlocale(locale.LC ALL, 'ru RU')
+# now = datetime.now()
+# print (now)
+
+# print (now.strftime ('%a'))
+# print (now.strftime ('%A'))
+
+# print(f'Дата: {now.strftime("%A, %d %b %Y")}')
+# print(f'Время: {now.strftime("&H:&M:&S")}')
+
+print (now. strftime ("%c')) 
+print (now.strftime ('%x')) 
+print (now.strftime ('%X'))
+
+now = datetime.today()
+print (now.strftime ('%c')) d1 = now + timedelta(days=1, hours=2, minutes=10) 
+print (d1.strftime('&c'))
