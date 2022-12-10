@@ -1,1 +1,33 @@
 
+import os
+
+def read_dir(folder):
+    for root, dirs, files in os.walk(folder):
+        
+        level = root.count(os.sep)
+        indent = ' ' * 4 * level
+        print(f'{indent} [{os.path.basename(root)}]')
+        s_indent = ' ' * 4 * (level+1)
+        # print(root, files, level,indent, s_indent)
+        for file in files:
+            print(f'{s_indent} {file}')
+
+
+
+
+read_dir ('folder')
+
+# tree = os.walk('folder')
+# for i in tree:
+#     print(i)
+
+
+
+
+
+
+
+
+
+
+
