@@ -1,0 +1,9 @@
+@property
+def age(self):
+  return self. ＿age
+@age.setter
+def age(self, value) :
+  if value in range(1, 101):
+    self.＿age = value 
+  else:
+    print ('Wrong age')
