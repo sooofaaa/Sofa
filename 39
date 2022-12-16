@@ -1,0 +1,58 @@
+#file with comand
+
+from classes import Pars
+
+pars = Pars('https://www.mk.ru/', 'news.txt')
+pars.run()
+# print(pars.raw_html)
+# print(pars.html)
+print(pars.results)
+
+#with classes
+
+from bs4 import BeautifulSoup
+import urllib.request
+
+class Pars:
+    raw_html = ''
+    html = ''
+    results = []
+
+    def __init__(self, url, path):
+        self.url = url
+        self.path = path
+
+    def get_html(self):
+        req = urllib.request.urlopen(self.url) 
+        self.raw_html = req.read()
+        self.html = BeautifulSoup(self.raw_html, "html.parser")
+
+
+    def parsing (self):
+        news = self.html.find_all("li", class_='news-listing__item')
+        
+        for item in news:
+            time = item.find('span', class_="news-listing__item-time").get_text()
+            name = item.find('h3', class_='news-listing__item-title').get_text()
+            href = item.find('a',class_="news-listing__item-link").get_text()
+            href = item.a['href']
+            self.results.append ({
+                'time' : time,
+                'name' : name,
+                'href' : href,
+            })
+ 
+
+    def save (self):
+        with open(self.path, 'w', encoding='utf-8') as f:
+            i=1
+            for item in self.results:
+                f.write(f'Новость № {i}\n\nВремя выхода: {item["time"]}\nНазвание: {item["name"]}\nСсылка: {item["href"]}\n\n*******************************\n')
+                i += 1
+
+
+    def run(self):
+        self.get_html()
+        self.parsing()
+        self.save()
+
