@@ -1,0 +1,26 @@
+class Person:
+  def ＿init＿ (self, name, age):
+    self. name = name
+    self. age = age
+  def print info(self):
+    print(f'Name: {self.name}, Age: {self.age}')
+    
+   @property
+  def age(self) :
+    return self. age
+  @age.setter
+  def age(self, value) :
+    if value in range(1, 101):
+      self. age = value
+    else:
+    print ('Wrong age')
+    
+    
+class Employee (Person) :
+
+ def ＿init＿ (self, name, age, company):
+   super() ＿init＿(name, age) 
+   self.company = company 
+
+  def more info(self):
+    print (f'{self.name} works in {self.company}')
