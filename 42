@@ -1,0 +1,37 @@
+def hello() :
+  return 'Hello, I am func "hello""
+def super func (func) :
+  print('Hello, I am func "super func"')
+  print (func ())
+super_func (hello)
+
+def hello():
+  return "Hello, I am func "hello""
+test = hello
+print (test ())
+
+def my decorator(func) : 
+  def func wrapper() :
+    print('Code before') 
+    func ()
+    print('Code after') 
+  return func_wrapper
+  
+@my_decorator 
+def func test():
+  print('Hello, I am func "func_test"")
+# test = my decorator(func test)
+# test ()
+func_test()
+
+def make_title(fn) :
+  def wrapped() :
+    title = fn()
+    title.capitalize()
+    title.replace(',', '')
+  return title
+return wrapped
+  
+  
+  
+  
