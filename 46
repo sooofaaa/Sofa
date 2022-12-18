@@ -1,0 +1,23 @@
+import sqlite3
+
+db = sqlite3.connect('test db.sqlite') 
+cursor = db.cursor()
+
+# cursor.execute("INSERT INTO users (name, email) VALUES ('Иванов Иван', ' ivanov@gmail.com ')")
+# cursor.execute("INSERT INTO users (name, email) VALUES ('Петров Пётр', ' petrov@gmail.com ')") 
+# cursor.execute("INSERT INTO users (name, email) VALUES ("Сидоров Сидор', ' sidorov@gmail.com ')") 
+# cursor.execute("INSERT INTO users (name, email) VALUES ("Пупкин Вася',' pupkin@gmail.com ')")
+
+# cursor.executescript ('''
+# INSERT INTO users (name, email) VALUES ('John Doe', ' doe@gmail.com '); 
+# INSERT INTO users (name, email) VALUES ("Nick Sand', ' sand@gmail.com ');
+#''')
+
+users = [
+  ('User l', ' userl@gmail.com '),
+  ('User 2', ' user2@gmail.com '),
+  ('User 3', ' user3@gmail.com '),
+]
+cursor.executemany("INSERT INTO users (name, email) VALUEs (?, ?)", users)
+db.commit ()
+db.close ()
